@@ -8,10 +8,10 @@
 
 <body bgcolor = "grey">
 	<center><h1><b>Reviews* of Some** Things***</b></h1></center>
-			<center><h3><i>Categories</i></h3></center>
-			<article th:each="review: ${reviews}" align = "center">
+	<center><h3><i>Categories</i></h3></center>
+	<article th:each="review: ${reviews}" align = "center">
 			<a th:href="@{/review(id=${review.id})}" th:text="${review.reviewCategory}"></a>
-			</article>
+	</article>
 	<br></br><br></br>		
 	<center><a href="https://www.youtube.com/watch?v=iqu132vTl5Y"><img src="welcome.jpg" width = "200" height = "200"/></a></center>
 	<br></br><br></br>
