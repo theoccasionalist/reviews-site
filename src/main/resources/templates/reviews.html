@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>A list of reviews</title>
+</head>
+
+<body bgcolor = "grey">
+	<center><h1><b>Reviews* of Some** Things***</b></h1></center>
+			<center><h3><i>Categories</i></h3></center>
+			<article th:each="review: ${reviews}" align = "center">
+			<a th:href="@{/review(id=${review.id})}" th:text="${review.reviewCategory}"></a>
+			</article>
+	<br></br><br></br>		
+	<center><a href="https://www.youtube.com/watch?v=iqu132vTl5Y"><img src="welcome.jpg" width = "200" height = "200"/></a></center>
+	<br></br><br></br>
+	<center><img src="colorStatic.jpg"  width = "1000" height = "5"/></center>
+	<center><img src="colorStatic.jpg"  width = "1000" height = "5"/></center>
+	<br></br>
+	<center><h5>*By 'review' I mean short, loosely relevant comments.</h5></center>		
+	<center><h5>**For any nth-order logic, the quantifier 'some' is translated as 'at least one'.</h5></center>
+	<center><h5>***By 'things' I mean spatiotemporal composite objects.</h5></center>
+</body>
+</html>

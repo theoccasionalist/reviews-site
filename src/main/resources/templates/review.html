@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<title th:each="review:${reviews}" th:text="${review.title}" />
+
+<body bgcolor = "grey" th:each="review:${reviews}">
+
+	<center><h1><head th:text="${review.reviewCategory}"/></h1></center>
+
+	<article align = "center">
+		<h3><i th:text="${review.name}"></i></h3>		
+		<img th:src="${review.imgurl}" width = "300" height = "300"/>
+		<p th:text="${review.content}"/>
+		<br></br>
+		<a th:text ="${review.linkIntro}" th:href = "${review.link}"></a>
+		<br></br><br></br><br></br>
+		<a href="http://localhost:8080/reviews">Return Home</a>
+		<br></br><br></br><br></br>
+		<center><img src="colorStatic.jpg"  width = "1000" height = "5"/></center>
+		<center><img src="colorStatic.jpg"  width = "1000" height = "5"/></center>
+	</article>
+
+</body>
+<center><br></br><br></br><footer th:each="review:${reviews}" th:text="${review.footer}"/></center>
+</html>
