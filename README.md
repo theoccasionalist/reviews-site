@@ -1,4 +1,4 @@
-# Reviews Site (Iteration One)
+# Reviews Site (First Iteration)
 ## Full-stack mock reviews site
 ### Tech Specs:
 <ul>
